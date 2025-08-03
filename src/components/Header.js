@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Plus, CheckSquare } from 'lucide-react';
+export const Header = ({ onCreateTask }) => {
+    return (_jsx("header", { className: "bg-white shadow-sm border-b border-gray-200", children: _jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: _jsxs("div", { className: "flex items-center justify-between h-16", children: [_jsxs("div", { className: "flex items-center space-x-3", children: [_jsx("div", { className: "bg-[#715CF3] p-2 rounded-lg", children: _jsx(CheckSquare, { className: "w-6 h-6 text-white" }) }), _jsxs("div", { children: [_jsx("h1", { className: "text-xl font-bold text-gray-900", children: "TaskFlow" }), _jsx("p", { className: "text-sm text-gray-500", children: "Event and Task Management App" })] })] }), _jsxs("button", { onClick: onCreateTask, className: "inline-flex items-center px-4 py-2 bg-[#715CF3] text-white rounded-lg hover:bg-blue-700 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md", children: [_jsx(Plus, { className: "w-4 h-4 mr-2" }), "New Task"] })] }) }) }));
+};
